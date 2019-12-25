@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - setuptools_scm >=1.15
   run:
-    - python
+    - python >=3.6
     - jaraco.text
     - jaraco.classes
     - six >=1.7.0
