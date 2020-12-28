@@ -5,11 +5,13 @@ Home: https://github.com/jaraco/jaraco.collections
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jaraco.collections-feedstock/blob/master/LICENSE.txt)
 
 Summary: Models and classes to supplement the stdlib 'collections' module.
 
+Development: https://github.com/jaraco/jaraco.collections
 
+Documentation: https://jaracocollections.readthedocs.io/
 
 Current build status
 ====================
