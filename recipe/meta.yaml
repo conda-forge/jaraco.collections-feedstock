@@ -18,12 +18,11 @@ requirements:
   host:
     - python >=3.6
     - pip
-    - setuptools_scm >=1.15
+    - setuptools_scm >=3.4.1
   run:
     - python >=3.6
     - jaraco.text
     - jaraco.classes
-    - six >=1.7.0
 
 test:
   imports:
