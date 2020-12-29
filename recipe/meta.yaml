@@ -1,5 +1,5 @@
 {% set name = "jaraco.collections" %}
-{% set version = "3.0.0" %}
+{% set version = "3.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,23 +7,22 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: be570ef4f2e7290b757449395238fa63d70a9255574624e73c5ff9f1ee554721
+  sha256: bbf6d1c032fe1af08ce1e4654d9354738da79ff51033cf3c215da80f3a9f9419
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python >=3.6
     - pip
-    - setuptools_scm >=1.15
+    - setuptools_scm >=3.4.1
   run:
     - python >=3.6
     - jaraco.text
     - jaraco.classes
-    - six >=1.7.0
 
 test:
   imports:
@@ -34,7 +33,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "Models and classes to supplement the stdlib 'collections' module."
+  summary: Models and classes to supplement the stdlib 'collections' module.
   doc_url: https://jaracocollections.readthedocs.io/
   dev_url: https://github.com/jaraco/jaraco.collections
 
