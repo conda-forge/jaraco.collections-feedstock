@@ -1,5 +1,5 @@
 {% set name = "jaraco.collections" %}
-{% set version = "3.5.2" %}
+{% set version = "3.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 072b93eb35f9e48508485755534e66a34ef1cc84af291fd27f39b44d4c0dd2c3
+  sha256: 9e4ef23d10d0b97ffd37b1f5a65819ea691d4da8ca2190bd19d5a035d7ccd9ca
 
 build:
   noarch: python
