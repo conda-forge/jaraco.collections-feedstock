@@ -1,11 +1,11 @@
-About jaraco.collections
-========================
+About jaraco.collections-feedstock
+==================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jaraco.collections-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/jaraco/jaraco.collections
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jaraco.collections-feedstock/blob/main/LICENSE.txt)
 
 Summary: Models and classes to supplement the stdlib 'collections' module.
 
