@@ -6,27 +6,29 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 808631b174b84a4e2a592490d62f62dfc15d8047a0f715726098dc43b81a6cfa
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - setuptools >=56
     - setuptools_scm >=3.4.1
     - toml
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - jaraco.text
     - jaraco.classes
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - jaraco.collections
 
